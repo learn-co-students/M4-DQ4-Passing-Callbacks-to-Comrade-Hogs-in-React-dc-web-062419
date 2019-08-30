@@ -72,40 +72,96 @@
   width: 100px;
   left: 0px;
   top: -200px;
-  animation: exclaim2 3.5s cubic-bezier(.54,.54,.23,1) forwards;
+  animation: exclaim2 3.5s cubic-bezier(.54, .54, .23, 1) forwards;
 
 }
 
 .exclamation {
   height: 120px;
   width: 60px;
-  animation: exclaim 1.5s cubic-bezier(.54,.54,.23,1) forwards;
+  animation: exclaim 1.5s cubic-bezier(.54, .54, .23, 1) forwards;
 }
 
 audio {
-   display: none;
+  display: none;
 }
 
 @keyframes exclaim {
-  0% {transform: scale(0.2); opacity: 1; }
-  20% {transform: scale(1.8); opacity: 1; }
-  30% {transform: scale(1); opacity: 1; }
-  50% {transform: scale(1.2); opacity: 1; }
-  100% {transform: scale(1); opacity: 0; }
+  0% {
+    transform: scale(0.2);
+    opacity: 1;
+  }
+
+  20% {
+    transform: scale(1.8);
+    opacity: 1;
+  }
+
+  30% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 
 @keyframes exclaim2 {
-  0% {transform: scale(0.2); opacity: 1; }
-  10% {transform: scale(1.8); opacity: 1; }
-  25% {transform: scale(1); opacity: 1; }
-  100% {transform: scale(1.2); opacity: 0; }
+  0% {
+    transform: scale(0.2);
+    opacity: 1;
+  }
+
+  10% {
+    transform: scale(1.8);
+    opacity: 1;
+  }
+
+  25% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
 }
 
 @keyframes redNeon {
-  from {
+  from {}
 
-  }
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+
+#galaxy-s-note:before {
+  content: '';
+  position: absolute;
+  left: 21px;
+  top: 44px;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/14179/shades.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 80px;
+  height: 200px;
+  animation: nope 3s ease;
+}
+
+@keyframes nope {
+  0% {
+    transform: translateY(-200px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
