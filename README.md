@@ -19,3 +19,4 @@ Find GalaxySNote7 and help him alert his fellow hogs when someone touches his sn
 - Understanding this, draw out the component tree with your group. A component tree should show the components and the data (props!) that are communicated between them
 - After at least two seconds, things in the pig pen should cool off, and the environment should return to normal (this means we should be able to click on GalaxySNote7 again, instigating the same chain of events all over again AFTER he has cooled his jets)
 - Once GalaxySNote7 is successfully instigating panic when he is tickled, incorporate the sounds where you see fit!
+## done
